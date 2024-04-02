@@ -31,7 +31,6 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-.pubspec.lock
 .packages
 
 # Symbolication related
@@ -47,8 +46,3 @@ app.*.map.json
 
 # Environment variables and secrets
 .env
-
-# Preventing generated folder from changing
-linux/
-macos/
-windows/
