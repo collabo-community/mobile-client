@@ -24,7 +24,7 @@ migrate_working_dir/
 # Flutter/Dart/Pub related
 .dart_tool/
 /build/
-# pubspec.lock
+pubspec.lock
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .flutter-plugins
@@ -46,3 +46,8 @@ app.*.map.json
 
 # Environment variables and secrets
 .env
+
+# Folders not to be tracked
+linux/
+macos/
+windows/
