@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_client/styles/colors.dart';
 
 void main() {
   runApp(
@@ -7,11 +8,11 @@ void main() {
 
       // Scaffold
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.Color_shades_white,
 
         // AppBar
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: AppColors.Color_shades_white,
           title: const Text('Collabo Community Mobile App'),
         ),
 
