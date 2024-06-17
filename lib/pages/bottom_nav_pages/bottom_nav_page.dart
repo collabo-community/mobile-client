@@ -22,11 +22,11 @@ class _BottomNavPageState extends State<BottomNavPage> {
     DonatePage(),
   ];
 
-  int _selectedIndex = 0;
+  int _selectedPage = 0;
 
   void onTap(int index) {
     setState(() {
-      _selectedIndex = index;
+      _selectedPage = index;
     });
   }
 
@@ -36,12 +36,12 @@ class _BottomNavPageState extends State<BottomNavPage> {
       backgroundColor: AppColors.Color_primary_50,
 
       // Body
-      body: pages[_selectedIndex],
+      body: pages[_selectedPage],
 
       // Bottom Nav Bar
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTap,
-        currentIndex: _selectedIndex,
+        currentIndex: _selectedPage,
         iconSize: 27,
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
