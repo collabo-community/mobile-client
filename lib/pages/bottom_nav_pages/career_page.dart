@@ -13,7 +13,6 @@ class CareerPage extends StatelessWidget {
       // AppBar
       appBar: AppBar(
         backgroundColor: AppColors.Color_shades_white,
-        automaticallyImplyLeading: false,
         title: Center(
           child: Text(
             'Career',
