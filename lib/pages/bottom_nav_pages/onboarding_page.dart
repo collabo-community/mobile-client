@@ -13,7 +13,6 @@ class OnboardingPage extends StatelessWidget {
       // AppBar
       appBar: AppBar(
         backgroundColor: AppColors.Color_shades_white,
-        automaticallyImplyLeading: false,
         title: Center(
           child: Text(
             'Onboarding',
@@ -25,7 +24,7 @@ class OnboardingPage extends StatelessWidget {
       // Onboarding body page
       body: Center(
         child: Text(
-          'Welcome to the onboarding page, here are things you need to know',
+          'Welcome to the onboarding page, this things you need to know about the project 🚀.',
           textAlign: TextAlign.center,
           style: AppTextStyles.type_Medium_body_text4,
         ),
