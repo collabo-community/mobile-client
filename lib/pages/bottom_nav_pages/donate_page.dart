@@ -8,7 +8,7 @@ class DonatePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ReusedScaffold(
       appTitle: 'Donation',
-      bodyContent: 'Coming Soon',
+      bodyContent: 'Coming soon',
     );
   }
 }
