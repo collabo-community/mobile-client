@@ -8,7 +8,7 @@ class OnboardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ReusedScaffold(
       appTitle: 'Onboarding',
-      bodyContent: 'COMING SOON...',
+      bodyContent: 'Coming Soon',
     );
   }
 }
