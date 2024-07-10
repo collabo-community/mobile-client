@@ -22,7 +22,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
     DonatePage(),
   ];
 
-  int _selectedPage = 0;
+  int _selectedPage = 1;
 
   void onTap(int index) {
     setState(() {
