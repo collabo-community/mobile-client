@@ -8,8 +8,7 @@ class CareerPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ReusedScaffold(
       appTitle: 'Career',
-      bodyContent:
-          'Welcome to the career page. Which career path interest you 🤔',
+      bodyContent: 'COMING SOON...',
     );
   }
 }
