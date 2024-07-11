@@ -8,7 +8,8 @@ class ProjectPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ReusedScaffold(
       appTitle: 'Project',
-      bodyContent: 'Welcome to the project page, choose a project to work on 🧐.',
+      bodyContent:
+          'Welcome to the project page, choose a project to work on 🧐.',
     );
   }
 }
