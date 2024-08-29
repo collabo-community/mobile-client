@@ -117,7 +117,7 @@ class _ProjectPageState extends State<ProjectPage> {
                                           AppColors.Color_primary_150,
                                     ),
                                     child: Text(
-                                      'Contribute to project',
+                                      'Contribute to Project',
                                       style: AppTextStyles.getTypeStyle(
                                         fontWeight: FontWeight.w700,
                                         fontSize: 12,
