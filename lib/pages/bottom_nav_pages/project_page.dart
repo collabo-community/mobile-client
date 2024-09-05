@@ -67,54 +67,83 @@ class _ProjectPageState extends State<ProjectPage> {
                         itemCount: _items.length,
                         itemBuilder: (context, index) {
                           final item = _items[index];
-                          return Card(
-                            shadowColor: Colors.transparent,
-                            color: AppColors.Color_shades_white,
-                            key: ValueKey(
-                              item["id"],
+                          return Container(
+                            margin: const EdgeInsets.all(20),
+                            decoration: BoxDecoration(
+                              color: AppColors.Color_shades_white,
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Color(0x0D121518),
+                                  blurRadius: 20,
+                                  spreadRadius: 0,
+                                  offset: Offset(0, 0),
+                                ),
+                              ],
                             ),
-                            margin: const EdgeInsets.all(10),
                             child: Padding(
-                              padding: const EdgeInsets.all(10),
+                              padding: const EdgeInsets.all(20.0),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  ListTile(
-                                    leading: Image.asset(
-                                      item["url"]["image"],
-                                      width: 80,
-                                      height: 80,
-                                      fit: BoxFit.cover,
-                                    ),
-                                    title: Text(
-                                      item["name"],
-                                      style: AppTextStyles.type_bold_h6,
-                                    ),
-                                    subtitle: Text(
-                                      'Project Count: ${item["project_count"]}',
-                                      style: AppTextStyles.getTypeStyle(
-                                        fontWeight: FontWeight.w700,
-                                        fontSize: 12,
-                                        color: AppColors.Color_neutral_200,
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Image.asset(
+                                        item["url"]["image"],
+                                        width: 90,
+                                        height: 90,
+                                        fit: BoxFit.cover,
                                       ),
-                                    ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            item["name"],
+                                            style: AppTextStyles.type_bold_h6,
+                                          ),
+                                          const SizedBox(
+                                            height: 5,
+                                          ),
+                                          Text(
+                                            'Project Count: ${item["project_count"]}',
+                                            style: AppTextStyles.getTypeStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.w700,
+                                              color:
+                                                  AppColors.Color_neutral_200,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 12,
                                   ),
                                   ElevatedButton(
                                     onPressed: () {
                                       final Uri url =
                                           Uri.parse(item["url"]["doc"]);
-                                      _launchUrl(
-                                        url,
-                                        true,
-                                      );
+                                      _launchUrl(url, false);
                                     },
                                     style: ElevatedButton.styleFrom(
-                                      minimumSize: const Size(300, 50),
-                                      padding: const EdgeInsets.all(10),
+                                      backgroundColor:
+                                          AppColors.Color_primary_150,
                                       shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(10),
                                       ),
-                                      backgroundColor:
-                                          AppColors.Color_primary_150,
+                                      minimumSize:
+                                          const Size(double.infinity, 50),
+                                      padding: const EdgeInsets.all(14),
                                     ),
                                     child: Text(
                                       'Contribute to Project',
